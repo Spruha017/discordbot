@@ -2,7 +2,7 @@
 
 // // intents - permissions
 // const client = new Client({intents: [GatwayIntentBits.Guilds, GatwayIntentBits.GuildMessages, GatwayIntentBits.MessageContent] });
-
+import TOKEN from "./env";
 const { Client, GatewayIntentBits } = require('discord.js');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
@@ -26,4 +26,4 @@ client.on('interactionCreate',interaction =>{
     interaction.reply("Pong");
 });
 
-client.login("MTIxMDY0MTQ3Mzg5NzUwNDgwOA.G_eT7m.Y_Mne_niJuPneP-P-MzLP7vnjDVBSiOoxR_ctA");
+client.login(TOKEN);
