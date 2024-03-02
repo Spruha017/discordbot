@@ -1,3 +1,4 @@
+import TOKEN from "./env";
 const { REST, Routes } = require("discord.js");
 
 const commands = [
@@ -7,7 +8,7 @@ const commands = [
     },
 ];
 
-const rest = new REST({ version: "10"}).setToken("MTIxMDY0MTQ3Mzg5NzUwNDgwOA.G_eT7m.Y_Mne_niJuPneP-P-MzLP7vnjDVBSiOoxR_ctA");
+const rest = new REST({ version: "10"}).setToken(TOKEN);
 
 (async () => {
     try {
